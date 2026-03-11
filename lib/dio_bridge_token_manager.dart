@@ -1,7 +1,7 @@
 import 'package:database_bridge/database_bridge.dart';
 import 'package:dio_bridge/dio_bridge_token_pair.dart';
 import 'package:flutter/foundation.dart';
-import 'package:web/web.dart' as web;
+import 'package:universal_html/html.dart' as html;
 
 class DioBridgeTokenManager {
   DioBridgeTokenManager._();
@@ -16,15 +16,15 @@ class DioBridgeTokenManager {
 
   // Web storage methods
   String? _webRead(String key) {
-    return web.window.localStorage.getItem(key);
+    return html.window.localStorage[key];
   }
 
   void _webWrite(String key, String value) {
-    web.window.localStorage.setItem(key, value);
+    html.window.localStorage[key] = value;
   }
 
   void _webDelete(String key) {
-    web.window.localStorage.removeItem(key);
+    html.window.localStorage.remove(key);
   }
 
   Future<void> initialize() async {
