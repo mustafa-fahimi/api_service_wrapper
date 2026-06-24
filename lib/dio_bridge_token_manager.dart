@@ -1,4 +1,4 @@
-import 'package:database_bridge/database_bridge.dart';
+import 'package:database_bridge/database_bridge_core.dart';
 import 'package:dio_bridge/dio_bridge_token_pair.dart';
 import 'package:flutter/foundation.dart';
 import 'package:universal_html/html.dart' as html;

@@ -8,7 +8,7 @@ topics:
   - networking
   - flutter
 
-version: 1.0.3
+version: 1.0.4
 
 repository: https://github.com/mustafa-fahimi/dio_bridge
 homepage: https://github.com/mustafa-fahimi/dio_bridge
@@ -28,7 +28,7 @@ environment:
   flutter: '>=3.38.0'
 
 dependencies:
-  database_bridge: ^1.0.2
+  database_bridge: ^1.0.4
   dio: ^5.9.2
   flutter:
     sdk: flutter
